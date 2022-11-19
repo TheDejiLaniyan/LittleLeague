@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.link{
+  font-weight: 600;
+  font-size: larger;
+}
+
+.link:focus-visible,
+.link:hover{
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.NavBar{
+  background-color: black;
+  height: 50px;
+}
+.NavBar-container{
+  display:flex;
+  margin: auto;
+}
+.NavBar-brand{
+  position: relative;
+  top: 5px;
+  margin: 0px 15px 0px;
+}
+
+.nav-link{
+  color: #FFF;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.header-logo{
+  width: 88px;
+  height: 88px;
+  padding-right: 10px;
+}
+
+.icon-button:hover,
+.icon-button:focus-visible{
+  transform: scale(1.2);
+  color: #FFF;
+}
+/* 0F172A */
+.Home-header{
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  align-items: center;
+  height: 150px;
+  background-color: #00013A;
+}
+
+.body-container{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: #D9D9D9;
+  /* background-image: url('./AdobeStock.jpeg'); */
+  /* background-color:#020202; */
+  background-size: cover;
+  background-blend-mode: multiply;
+  /* position: fixed;  */
+  /* height: 300px; */
+}
+
+.body{
+  width: 60%;
+  color: #FFF;
+  /* background-color: cadetblue; */
+  background-color: #FFF;
+}
+
+
+.column-1,
+.column-2{
+  display: flex;
+  padding: 5px;
+}
+
+.body-table{
+  padding: 0px 20px 0px;
+  border: none;
+  width: 60%;
+  color: #0F172A;
+  text-align: center;
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+.table {
+  padding: 20px;
+  font-size: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 0.1em;
+}
+
+.table__thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table__th,
+.table__cell {
+  background-color: var(--TABLE-BGCOLOR)!important;
+  text-align: center;
+  border: 1px solid ;
+  border-color: #FFF;
+  padding: 0.5em;
+}
+
+.table__th-null{
+  display: none;
+}
+
+.table__cell:last-child {
+  display: grid;
+  place-content: center;
+}
+
+.table__cell--inactive {
+  background-color: var(--INACTIVE) !important;
+}
+
+.table__cell-null{
+  display: none;
+}
+
+.visit-facebook{
+  width: 50%;
+  margin-left: 40px;
+  height: 30px;
+  padding: 5px 15px 5px;
+  align-content: center;
+  font-size: 0.9em;
+  background-color: #0F172A;
+}
+
+
+/* SIgn In Page */
+
+.form-container{
+  max-width: 40%;
+  padding: 40px;
+  position: relative;
+  top: 70px;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form {
+  margin: auto;
+  display: flex;
+   flex-flow: column nowrap;
+   gap: 0.75em;
+   max-width: 400px;
+ }
+
+
+ .input-error {
+  border-color: red;
+  padding: 0.5em;
+  border-radius: 15px;
+}
+
+button:disabled{
+  opacity: 0.35;
+}
+
+.input-feedback {
+  color: rgb(235, 54, 54);
+  margin-top: -15px;
+  font-size: 14px;
+  margin-bottom: -10px;
+}
+
+
+.form__checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+.form__select {
+  width: fit-content;
+  padding: 0.25em;
+}
+
+.form__persist {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5em;
+}
+
+
+.form__input {
+  padding: 0.5em;
+  border-radius: 15px;
+}
+
+.form__submit-button{
+  border-radius: 20px;
+  padding: 0.5em 1em 0.5em;
+  border-color:#00013A;
+  background-color:#00013A;
+  color: #FFF;
+}
+
+.form__back-button{
+  border-radius: 20px;
+  padding: 0.5em 1em 0.5em;
+  border-color:#9b1801;
+  background-color:#9b1801;
+  color: #FFF;
+}
+
+.form__submit-button:hover,
+.form__submit-button:focus-visible{
+  background-color:#02048b;
+  border-color: #02048b;
+ 
+}
+
+.form__back-button:hover,
+.form__back-button:focus-visible{
+  border-color:#e42706;
+  background-color:#e42706;
+}
+
+.form-text{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.form-label{
+  font-weight: 600;
+  font-size: large;
+  text-align: start;
+  padding-left: 30px;
+}
+
+/* Sign In Page */
+
+/* users page */
+.users-form{
+  max-width: 80%;
+  padding: 0px 40px 20px;
+  position: relative;
+  top: 20px;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.users-table{
+  padding: 10px;
+  font-size: 1.25rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.1em;
+}
+
+.users-form__button{
+  color: black;
+  font-size: 1.75rem;
+  border: none;
+  background-color: transparent;
+}
+
+.users-form__button:hover,
+.users-form__button:focus-visible{
+  transform: scale(1.2);
+}
+
+.user-head{
+  color: #e61111;
+}
+
+.new-button-container{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.new-button{
+  background-color: black;
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding: 10px 15px 10px;
+  border-radius: 25px;
+}
+
+.new-button:hover,
+.new-button:focus-visible{
+  background-color: rgb(51, 51, 51);
+  border-color: rgb(51, 51, 51);
+}
+
+/* users page */
+
+/* NEw User Form */
+
+.new__form-container{
+  margin: auto;
+  padding: 20px;
+}
+
+.new__user-form {
+  text-align: center;
+  margin: auto;
+  display: flex;
+   flex-flow: column nowrap;
+   gap: 0.75em;
+   max-width: 500px;
+   min-width: 300px;
+ }
+
+ .form-icon{
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+ }
+
+ .form-icon:hover,
+ .form-icon:focus-visible{
+  transform: scale(1.2);
+ }
+
+ .form__action-buttons{
+  text-align: end;
+  padding-right: 20px;
+ }
+
+ /*officers page  */
+.officers-form{
+  max-width: 80%;
+  padding: 0px 40px 20px;
+  position: relative;
+  top: 20px;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.officers-table-auth{
+  padding: 10px;
+  font-size: 1.25rem;
+  width: 100%;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+  /* grid-template-columns: auto auto auto auto auto ; */
+  gap: 0.1em;
+}
+.officers-table{
+  padding: 10px;
+  font-size: 1.25rem;
+  width: 100%;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  /* grid-template-columns: auto auto auto auto auto ; */
+  gap: 0.1em;
+}
+ /* officers page */
+
+ /* Leagues page */
+
+ .leagues-table-auth{
+  padding: 10px;
+  font-size: 1.25rem;
+  width: 100%;
+  display:grid;
+  grid-template-columns:1fr 1fr  1fr 1fr ;
+  /* grid-template-columns: auto auto auto auto auto ; */
+  gap: 0.1em;
+}
+.leagues-table{
+  padding: 10px;
+  font-size: 1.25rem;
+  width: 100%;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr ;
+  /* grid-template-columns: auto auto auto auto auto ; */
+  gap: 0.1em;
+}
+
+ /* Leagues page */
